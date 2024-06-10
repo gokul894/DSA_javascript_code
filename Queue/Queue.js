@@ -18,9 +18,11 @@ class Queue {
 
     enQueue(val){
         this.data.push(val);
+        this.size++;
     }
 
     deQueue(){
+        this.size--;
         return this.data.shift();
     }
 
