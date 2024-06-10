@@ -2,6 +2,6 @@
 
 ## ----------------------------------------->
 
-## here we are emplimenting some usefull data structure and algorithem
+here we are emplimenting some usefull data structure and algorithm
 
 ## ----------------------------------------->
