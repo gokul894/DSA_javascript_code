@@ -9,6 +9,21 @@ import { treeRoot } from "../index.js"
 //         this.right = null;
 //     }
 // }
+/**
+ * 
+ * @param {*} root 
+ * @returns 
+ * 
+ *     Tree is like...
+
+                        27
+                       /   \
+                     13     92
+                    /  \    / \
+                   10  24  38  120
+
+ */
+
 // debugger
 
 function inOrderTraversal(root){

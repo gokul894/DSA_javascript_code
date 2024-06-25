@@ -27,7 +27,7 @@ class Tree{
     }
 
     insertItem(node, newNode){
-        if(node.val < newNode.val){
+        if(node.val > newNode.val){
             if(node.left){
                 this.insertItem(node.left, newNode);
             }else{
@@ -69,7 +69,7 @@ t1.insert(13);
 t1.insert(92);
 t1.insert(24);
 t1.insert(38);
-t1.insert(28);
+t1.insert(120);
 t1.insert(10);
 
 // t1.printVal(); ---> it's give 27, 92, 38, 28, 13, 24, 10
