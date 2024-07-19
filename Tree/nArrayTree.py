@@ -7,6 +7,7 @@ class Node:
             self.children = []
         else:
             self.children = children
+            
     
 # it's outer function for traversing inorder
 def inorder(root):
@@ -18,6 +19,40 @@ def inorder(root):
             help(child, ans)
         return ans
     return help(root, [])
+
+
+    
+# postOrder traversal
+def post_order(root):
+    ans = []
+    def help(root):
+        if not root: return ans
+        for child in root.children:
+            help(child)
+        ans.append(root.val)
+    help(root)
+    return ans
+
+
+# inorder traversel
+def inorder(root):
+    if root is None:
+        return []
+    
+    result = []
+    def traverse(node):
+        if node is None:
+            return
+        n = len(node.children)
+        for i in range(n // 2):
+            traverse(node.children[i])
+        result.append(node.val)
+        for i in range(n // 2, n):
+            traverse(node.children[i])
+    
+    traverse(root)
+    return result
+
 
 # adding data to make n array tree
 root = Node(1, 
